@@ -146,11 +146,13 @@ It balances performance, scalability, and efficiency, meeting high-concurrency d
    python data_pipeline.py
    ```
    ### Output:
-   *Sample batch:*
-    *input_ids shape: torch.Size([16, 108])*
-    *attention_mask shape: torch.Size([16, 108])*
-    *labels shape: torch.Size([16, 108])*
-    *Sample input_ids: tensor([ 6310,  2762,    25,  7343,   642, 15162,  4568,   661,   714,   466])*
+   ```bash
+   Sample batch:
+    input_ids shape: torch.Size([16, 108])
+    attention_mask shape: torch.Size([16, 108])
+    labels shape: torch.Size([16, 108])
+    Sample input_ids: tensor([ 6310,  2762,    25,  7343,   642, 15162,  4568,   661,   714,   466])
+    ```
 2. **Model Modification:**
     ```bash
     python modify_llm.py --modification_type lora --lora_rank 8
